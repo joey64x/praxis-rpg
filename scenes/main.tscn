@@ -1,0 +1,295 @@
+[gd_scene load_steps=13 format=3 uid="uid://d1dh0oaskoctg"]
+
+[ext_resource type="PackedScene" uid="uid://cw6qj047rnfaq" path="res://assets/KayKit_DungeonRemastered_1.1_SOURCE/Assets/gltf/floor_dirt_large.gltf" id="1_7tu67"]
+[ext_resource type="PackedScene" uid="uid://1q4owtccv7ll" path="res://scenes/player.tscn" id="2_rd4ca"]
+[ext_resource type="PackedScene" uid="uid://batebfb6v0n7e" path="res://assets/KayKit_DungeonRemastered_1.1_SOURCE/Assets/gltf/wall_cracked.gltf" id="3_twf7v"]
+[ext_resource type="PackedScene" uid="uid://4luipjn2cre" path="res://assets/KayKit_DungeonRemastered_1.1_SOURCE/Assets/gltf/wall.gltf" id="4_5svlw"]
+[ext_resource type="PackedScene" uid="uid://dnqsw6c6c3lp3" path="res://assets/KayKit_DungeonRemastered_1.1_SOURCE/Assets/gltf/wall_archedwindow_gated.gltf" id="5_ld3bj"]
+[ext_resource type="PackedScene" uid="uid://dnyjdn05je7bh" path="res://assets/KayKit_DungeonRemastered_1.1_SOURCE/Assets/gltf/wall_arched.gltf" id="6_v3300"]
+[ext_resource type="PackedScene" uid="uid://cs7v0v7iwhd1s" path="res://assets/KayKit_DungeonRemastered_1.1_SOURCE/Assets/gltf/wall_corner.gltf" id="7_dl7ty"]
+[ext_resource type="PackedScene" uid="uid://ddt20nhj54fhe" path="res://assets/KayKit_DungeonRemastered_1.1_SOURCE/Assets/gltf/torch_lit.gltf" id="7_nift2"]
+[ext_resource type="PackedScene" uid="uid://c4sr4suufm2ai" path="res://assets/KayKit_DungeonRemastered_1.1_SOURCE/Assets/gltf/wall_half.gltf" id="8_rdpw0"]
+[ext_resource type="PackedScene" uid="uid://bwg0tonjp77sh" path="res://assets/KayKit_DungeonRemastered_1.1_SOURCE/Assets/gltf/wall_doorway.gltf" id="9_mm1nx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8bwpj"]
+size = Vector3(12, 0.1, 32)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ocfb3"]
+size = Vector3(0.9, 4, 12)
+
+[node name="Main" type="Node"]
+
+[node name="Floor" type="StaticBody3D" parent="."]
+
+[node name="Pivot" type="Node3D" parent="Floor"]
+
+[node name="floor_dirt_large2" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+
+[node name="floor_dirt_large3" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="floor_dirt_large4" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="floor_dirt_large5" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="floor_dirt_large6" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="floor_dirt_large7" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+
+[node name="floor_dirt_large8" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+
+[node name="floor_dirt_large9" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
+
+[node name="floor_dirt_large10" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+
+[node name="floor_dirt_large11" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
+
+[node name="floor_dirt_large12" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 12)
+
+[node name="floor_dirt_large13" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 12)
+
+[node name="floor_dirt_large14" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
+
+[node name="floor_dirt_large15" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 16)
+
+[node name="floor_dirt_large16" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 16)
+
+[node name="floor_dirt_large17" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+
+[node name="floor_dirt_large18" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 20)
+
+[node name="floor_dirt_large19" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 20)
+
+[node name="floor_dirt_large20" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24)
+
+[node name="floor_dirt_large21" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 24)
+
+[node name="floor_dirt_large22" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
+
+[node name="floor_dirt_large23" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28)
+
+[node name="floor_dirt_large24" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 28)
+
+[node name="floor_dirt_large25" parent="Floor/Pivot" instance=ExtResource("1_7tu67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 28)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -0.025, 14)
+shape = SubResource("BoxShape3D_8bwpj")
+
+[node name="Walls" type="Node" parent="."]
+
+[node name="WallsWest" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, 0)
+
+[node name="Pivot" type="Node3D" parent="Walls/WallsWest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="wall_cracked2" parent="Walls/WallsWest/Pivot" instance=ExtResource("3_twf7v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 2)
+
+[node name="wall_cracked3" parent="Walls/WallsWest/Pivot" instance=ExtResource("3_twf7v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 18)
+
+[node name="wall_cracked4" parent="Walls/WallsWest/Pivot" instance=ExtResource("3_twf7v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 26)
+
+[node name="wall2" parent="Walls/WallsWest/Pivot" instance=ExtResource("4_5svlw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 10)
+
+[node name="wall_archedwindow_gated2" parent="Walls/WallsWest/Pivot" instance=ExtResource("5_ld3bj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 6)
+
+[node name="wall_archedwindow_gated3" parent="Walls/WallsWest/Pivot" instance=ExtResource("5_ld3bj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 14)
+
+[node name="wall_arched2" parent="Walls/WallsWest/Pivot" instance=ExtResource("6_v3300")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 22)
+
+[node name="wall_corner2" parent="Walls/WallsWest/Pivot" instance=ExtResource("7_dl7ty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="wall_corner3" parent="Walls/WallsWest/Pivot" instance=ExtResource("7_dl7ty")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 30)
+
+[node name="torch_lit2" parent="Walls/WallsWest/Pivot" instance=ExtResource("7_nift2")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 1.6, 2.4, 3)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Walls/WallsWest/Pivot/torch_lit2"]
+light_color = Color(1, 0.658824, 0, 1)
+light_specular = 1.5
+light_bake_mode = 1
+shadow_enabled = true
+
+[node name="torch_lit3" parent="Walls/WallsWest/Pivot" instance=ExtResource("7_nift2")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 1.6, 2.4, 10)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Walls/WallsWest/Pivot/torch_lit3"]
+light_color = Color(1, 0.658824, 0, 1)
+light_specular = 1.5
+light_bake_mode = 1
+shadow_enabled = true
+
+[node name="torch_lit4" parent="Walls/WallsWest/Pivot" instance=ExtResource("7_nift2")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 1.6, 2.4, 17)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Walls/WallsWest/Pivot/torch_lit4"]
+light_color = Color(1, 0.658824, 0, 1)
+light_specular = 1.5
+light_bake_mode = 1
+shadow_enabled = true
+
+[node name="torch_lit5" parent="Walls/WallsWest/Pivot" instance=ExtResource("7_nift2")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 1.6, 2.4, 26)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Walls/WallsWest/Pivot/torch_lit5"]
+light_color = Color(1, 0.658824, 0, 1)
+light_specular = 1.5
+light_bake_mode = 1
+shadow_enabled = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallsWest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0500002, 2, 13.95)
+shape = SubResource("BoxShape3D_ocfb3")
+
+[node name="WallsSouth" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.5, 0, -2)
+
+[node name="Pivot" type="Node3D" parent="Walls/WallsSouth"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+visible = false
+
+[node name="wall_arched2" parent="Walls/WallsSouth/Pivot" instance=ExtResource("6_v3300")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 4)
+
+[node name="wall_half2" parent="Walls/WallsSouth/Pivot" instance=ExtResource("8_rdpw0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 6)
+
+[node name="wall_half3" parent="Walls/WallsSouth/Pivot" instance=ExtResource("8_rdpw0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallsSouth"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0500011, 2, 3.9)
+shape = SubResource("BoxShape3D_ocfb3")
+
+[node name="WallsNorth" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 8.5, 0, 30)
+
+[node name="Pivot" type="Node3D" parent="Walls/WallsNorth"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="wall_half2" parent="Walls/WallsNorth/Pivot" instance=ExtResource("8_rdpw0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 6)
+
+[node name="wall_half3" parent="Walls/WallsNorth/Pivot" instance=ExtResource("8_rdpw0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 0)
+
+[node name="wall_doorway2" parent="Walls/WallsNorth/Pivot" instance=ExtResource("9_mm1nx")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 2, 0, 4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallsNorth"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0500011, 2, 3.9)
+shape = SubResource("BoxShape3D_ocfb3")
+
+[node name="WallsEast" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.5, 0, 28)
+
+[node name="Pivot" type="Node3D" parent="Walls/WallsEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="wall_cracked2" parent="Walls/WallsEast/Pivot" instance=ExtResource("3_twf7v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 2)
+
+[node name="wall_cracked3" parent="Walls/WallsEast/Pivot" instance=ExtResource("3_twf7v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 18)
+
+[node name="wall_cracked4" parent="Walls/WallsEast/Pivot" instance=ExtResource("3_twf7v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 26)
+
+[node name="wall2" parent="Walls/WallsEast/Pivot" instance=ExtResource("4_5svlw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 10)
+
+[node name="wall_archedwindow_gated2" parent="Walls/WallsEast/Pivot" instance=ExtResource("5_ld3bj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 6)
+
+[node name="wall_archedwindow_gated3" parent="Walls/WallsEast/Pivot" instance=ExtResource("5_ld3bj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 14)
+
+[node name="wall_arched2" parent="Walls/WallsEast/Pivot" instance=ExtResource("6_v3300")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 22)
+
+[node name="wall_corner2" parent="Walls/WallsEast/Pivot" instance=ExtResource("7_dl7ty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="wall_corner3" parent="Walls/WallsEast/Pivot" instance=ExtResource("7_dl7ty")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 30)
+
+[node name="torch_lit2" parent="Walls/WallsEast/Pivot" instance=ExtResource("7_nift2")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 1.6, 2.4, 3)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Walls/WallsEast/Pivot/torch_lit2"]
+light_color = Color(1, 0.658824, 0, 1)
+light_specular = 1.5
+light_bake_mode = 1
+shadow_enabled = true
+
+[node name="torch_lit3" parent="Walls/WallsEast/Pivot" instance=ExtResource("7_nift2")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 1.6, 2.4, 10)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Walls/WallsEast/Pivot/torch_lit3"]
+light_color = Color(1, 0.658824, 0, 1)
+light_specular = 1.5
+light_bake_mode = 1
+shadow_enabled = true
+
+[node name="torch_lit4" parent="Walls/WallsEast/Pivot" instance=ExtResource("7_nift2")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 1.6, 2.4, 17)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Walls/WallsEast/Pivot/torch_lit4"]
+light_color = Color(1, 0.658824, 0, 1)
+light_specular = 1.5
+light_bake_mode = 1
+shadow_enabled = true
+
+[node name="torch_lit5" parent="Walls/WallsEast/Pivot" instance=ExtResource("7_nift2")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 1.6, 2.4, 26)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Walls/WallsEast/Pivot/torch_lit5"]
+light_color = Color(1, 0.658824, 0, 1)
+light_specular = 1.5
+light_bake_mode = 1
+shadow_enabled = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallsEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0500002, 2, 13.95)
+shape = SubResource("BoxShape3D_ocfb3")
+
+[node name="Player" parent="." instance=ExtResource("2_rd4ca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.711516, -0.396857, 0.57987, -0.699469, -0.321351, 0.638339, -0.0669873, -0.859789, -0.506236, 5, 10, 9)
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.961516, 0.0798697, -0.262883, 0.266456, -0.504364, 0.821351, -0.0669873, -0.859789, -0.506236, 5, 10, 9)
