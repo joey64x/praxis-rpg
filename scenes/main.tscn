@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d1dh0oaskoctg"]
+[gd_scene load_steps=16 format=3 uid="uid://d1dh0oaskoctg"]
 
 [ext_resource type="PackedScene" uid="uid://cw6qj047rnfaq" path="res://assets/KayKit_DungeonRemastered_1.1_SOURCE/Assets/gltf/floor_dirt_large.gltf" id="1_7tu67"]
 [ext_resource type="PackedScene" uid="uid://1q4owtccv7ll" path="res://scenes/player.tscn" id="2_rd4ca"]
@@ -16,6 +16,17 @@ size = Vector3(12, 0.1, 32)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ocfb3"]
 size = Vector3(0.9, 4, 12)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7sxlr"]
+
+[sub_resource type="Sky" id="Sky_eggw1"]
+sky_material = SubResource("ProceduralSkyMaterial_7sxlr")
+
+[sub_resource type="Environment" id="Environment_4bd1t"]
+background_mode = 2
+background_energy_multiplier = 2.0
+sky = SubResource("Sky_eggw1")
+tonemap_mode = 3
 
 [node name="Main" type="Node"]
 
@@ -289,7 +300,10 @@ shape = SubResource("BoxShape3D_ocfb3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.711516, -0.396857, 0.57987, -0.699469, -0.321351, 0.638339, -0.0669873, -0.859789, -0.506236, 5, 10, 9)
+transform = Transform3D(1, 0, 0, 0, -0.5, 0.866025, 0, -0.866025, -0.5, 0, 21, 0)
+light_energy = 0.353
+shadow_enabled = true
+shadow_blur = 1.27
 
-[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.961516, 0.0798697, -0.262883, 0.266456, -0.504364, 0.821351, -0.0669873, -0.859789, -0.506236, 5, 10, 9)
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4bd1t")
